@@ -12,7 +12,12 @@ class UPI_ID:
         return self.my_id == other.my_id and self.my_bank_id == other.my_bank_id
 
 ID = UPI_ID("59599595", "okabc")
+ID1 = UPI_ID("59599595", "okabc")
 print(ID)
 
-somebody = ID
-print(somebody is ID)
+ID1 = ID
+print(ID1 is ID)
+
+ID2 = UPI_ID("59599595", "okabc")
+print(ID2 is ID1)
+
